@@ -25,8 +25,10 @@ public class Main {
         try {
             FileReader fileReader = new FileReader("alphabet.txt");
             Scanner scanner = new Scanner(fileReader);
+            int counter = 0;
             while (scanner.hasNextLine()) {
-                System.out.println(scanner.nextLine());
+                counter++;
+                System.out.println(counter+" :  "+scanner.nextLine());
             }
         } catch (IOException e) {
             System.out.println(" No such file ! ");
